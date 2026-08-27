@@ -1,3 +1,16 @@
+USE CollegeDB;
+
+-- Update Karthik's department
+UPDATE Student
+SET DepartmentID = 103
+WHERE StudentName = 'Karthik';
+
+-- Delete student with StudentID 1002
+DELETE FROM Student
+WHERE StudentID = 1002;
+
+-- Display the updated Student table
+SELECT * FROM Student;
 DROP DATABASE IF EXISTS CollegeDB;
 CREATE DATABASE CollegeDB;
 USE CollegeDB;
