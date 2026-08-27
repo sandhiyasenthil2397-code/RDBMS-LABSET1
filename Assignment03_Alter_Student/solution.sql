@@ -1,3 +1,10 @@
+USE CollegeDB;
+
+ALTER TABLE Student
+ADD Email VARCHAR(30),
+ADD PhoneNumber BIGINT;
+
+DESC Student;
 DROP DATABASE IF EXISTS CollegeDB;
 CREATE DATABASE CollegeDB;
 USE CollegeDB;
